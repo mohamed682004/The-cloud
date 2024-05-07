@@ -6,8 +6,8 @@
 
 
 :root {
-    --clr-primary: #1D63ED;
-    --clr-accent-100: #808DDD;
+    --clr-alt: #1D63ED;
+    --clr-primary: #808DDD;
     --clr-accent-900: #17191E;
 }
 
@@ -15,7 +15,7 @@
 body {
     font-family: sans-serif;
     min-height: 100vh;
-    background-color: var(--clr-accent-100);
+    background-color: var(--clr-primary);
 }
 
 .home {
@@ -33,7 +33,7 @@ body {
 }
 
 .intro h1{
-    font-size: 2rem;
+    font-size: 2.125rem;
     margin-bottom: 1.25em;
 }
 
@@ -65,7 +65,7 @@ a {
 }
 
 a:hover {
-    color: var(--clr-primary);
+    color: var(--clr-alt);
 }
 
 @media (max-width: 1200px) {
@@ -92,6 +92,8 @@ a:hover {
 .home img {
     width: 100%;
     scale: 1.2;
+    animation: up-down 2s linear infinite alternate-reverse;
+    -webkit-animation: up-down 2s linear infinite alternate-reverse;
 }
 
 
@@ -142,5 +144,19 @@ a:hover {
 }
 
 
-
+@keyframes up-down {
+    from {
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+} to {
+        transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+        -moz-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+        -o-transform: translateY(10px);
+}
+}
 
