@@ -11,11 +11,12 @@ services:
     depends_on:
       - mysql
   mysql:
-    image: 'mysql:8-oracle'
+    image: 'mysql:latest'
     environment:
       - MYSQL_ROOT_PASSWORD=2004
       - MYSQL_DATABASE=cloudy_members
     volumes:
       - db_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
 volumes:
   db_data:

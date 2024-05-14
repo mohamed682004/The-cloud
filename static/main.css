@@ -143,6 +143,22 @@ a:hover {
     font-weight: bold;
 }
 
+.error {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.error h1 {
+    font-size: 2.125rem;
+    margin-bottom: 1.25em;
+}
 
 @keyframes up-down {
     from {
