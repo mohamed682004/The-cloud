@@ -13,7 +13,7 @@ class Member(db.Model):
     id = db.Column(db.BigInteger, primary_key=True)
     name = db.Column(db.String(50), nullable=False)
     age = db.Column(db.Integer, nullable=False)
-    CGPA = db.Column(db.DECIMAL, nullable=False)
+    CGPA = db.Column(db.FLOAT, nullable=False)
 
 
 @app.route("/")
