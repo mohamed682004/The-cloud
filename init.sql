@@ -11,8 +11,8 @@ CREATE TABLE member
 
 INSERT INTO member
 VALUES
-    (22010333, 'Khalil Elemam', 19, 3.7),
-    (2106151, 'Adam Kelany', 21, 2.9),
-    (22010022, 'Ahmed AdbelHamed', 21, 3),
-    (22010211, 'Muhammed Emran', 19, 3.1),
-    (22011656, 'Seif-Eldin Muhammed', 20, 2.7);
+    (1, 'Member One', 19, 4),
+    (2, 'Member Two', 21, 4),
+    (3, 'Member Three', 21, 4),
+    (4, 'Member Four', 19, 4),
+    (5, 'Member Five', 20, 4);
